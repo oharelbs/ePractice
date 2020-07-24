@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <h2>ePractice</h2>
+
+        <script src="createAndRemoveRows.js"></script>
+        <script src="createForm.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        
+
+   
+        </HEAD>
+<body>
+    <INPUT type="button" value="Add Row" onclick="addRow('dataTable')" />
+    <INPUT type="button" value="Delete Row" onclick="deleteRow('dataTable')" />
+    <INPUT type="button" value="Clear All" onclick="clearAll()" />
+
+	<TABLE id="dataTable"  border="1" ;>
+        <tr>
+            <td><INPUT type="checkbox" id="checkAll" name="chkAll" onclick="checkAll(this)"/></td>
+            <td style="text-align: center;">Num</td>
+            <td style="text-align: center;">Word</td>
+            <td style="text-align: center;">Definition</td>
+        </tr>
+		<TR>
+			<TD><INPUT type="checkbox" class="myCheckBox" name="chk" id="chk"/></TD>
+			<TD> 1 </TD>
+            <TD> <INPUT type="text" class="wordText" id="wordTextFirst"/> </TD>
+            <TD> <INPUT type="text" class="defText" id="defTextFirst"/> </TD>
+		</TR>
+    </TABLE>
+    <br><br>
+    <INPUT type="button" value="Create Form" onclick="createForm()" />
+</body>
+
+</html>
